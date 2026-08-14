@@ -175,7 +175,7 @@ Centered content column at `min(100% - 2×lg, 1200px)`. Section padding is `--sp
 
 Rhythm is a dark/light band: full-bleed navy or abyss sections alternate with cool-white and mid-grey bands. Split layouts are two columns with `--space-2xl` gap, collapsing to one column at 1023px. Signature grids: six bidang usaha as an asymmetric 3-row mosaic; five values as a hairline-divided strip on dark; four supply-chain steps in a row.
 
-Breakpoints observed: 1023px (grids collapse to two columns; hamburger not yet), 767px (nav drawer, single-column grids, transparent nav becomes solid navy). Nav height is 4.5rem, reserved as padding on heroes.
+Breakpoints observed: 1023px (grids collapse to two columns; hamburger not yet), 767px (nav drawer, single-column grids). Nav height is 4.5rem, reserved as padding on heroes. The bar stays transparent at the top of every route until scroll (or while the drawer is open).
 
 ## Elevation & Depth
 
@@ -224,7 +224,7 @@ Quiet chrome. Interactive height is at least 44px. Focus-visible is a 2px `trade
 
 ### Navigation
 
-- **Bar:** Fixed, 4.5rem. Transparent over the home hero until solid `deep-ocean` on scroll; always solid on inner pages and on small screens.
+- **Bar:** Fixed, 4.5rem. Transparent over every page hero until solid `deep-ocean` on scroll, or while the mobile drawer is open.
 - **Links:** `--text-sm`, `text-on-dark`, 44px min-height. Active = 2px gold underline.
 - **Mobile:** Hamburger at 767px; right drawer in `deep-ocean`; active drawer link fills `ocean`. Backdrop is a 0.55 navy veil.
 

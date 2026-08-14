@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Logo from './Logo';
@@ -6,13 +6,15 @@ import { navItems } from '../data/company';
 
 export default function Navbar() {
   const { pathname } = useLocation();
-  const isHome = pathname === '/';
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const prevPath = useRef(pathname);
 
-  useEffect(() => {
+  if (prevPath.current !== pathname) {
+    prevPath.current = pathname;
     setOpen(false);
-  }, [pathname]);
+    setScrolled(false);
+  }
 
   useEffect(() => {
     let frame = 0;
@@ -38,7 +40,7 @@ export default function Navbar() {
     };
   }, [open]);
 
-  const solid = !isHome || scrolled || open;
+  const solid = scrolled || open;
 
   return (
     <header className={`nav ${solid ? 'is-solid' : 'is-transparent'}`}>

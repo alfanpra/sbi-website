@@ -19,6 +19,7 @@ export default function PageHero({ title, subtitle, image }: PageHeroProps) {
           decorative
         />
       )}
+      <div className="hero-veil" />
       <div className="container page-hero-inner">
         <h1 id="page-hero-title">{title}</h1>
         {subtitle && <p>{subtitle}</p>}
