@@ -1,4 +1,5 @@
 import type { ImageAsset } from '../types';
+import ResponsiveImage from './ResponsiveImage';
 
 type PageHeroProps = {
   title: string;
@@ -10,7 +11,13 @@ export default function PageHero({ title, subtitle, image }: PageHeroProps) {
   return (
     <section className="page-hero" aria-labelledby="page-hero-title">
       {image && (
-        <img className="page-hero-img" src={image.src} alt="" width={1600} height={900} />
+        <ResponsiveImage
+          image={image}
+          className="page-hero-img"
+          sizes="100vw"
+          eager
+          decorative
+        />
       )}
       <div className="container page-hero-inner">
         <h1 id="page-hero-title">{title}</h1>

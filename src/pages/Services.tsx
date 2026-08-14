@@ -3,6 +3,7 @@ import PageHero from '../components/PageHero';
 import ScrollReveal from '../components/ScrollReveal';
 import SupplyChainFlow from '../components/SupplyChainFlow';
 import CtaBanner from '../components/CtaBanner';
+import ResponsiveImage from '../components/ResponsiveImage';
 import { images } from '../data/images';
 import { commodities, qualityAssurance, services } from '../data/services';
 
@@ -36,7 +37,10 @@ export default function Services() {
             <div className={`container split ${index % 2 === 1 ? 'split-reverse' : ''}`}>
               <ScrollReveal>
                 <figure className="media-frame">
-                  <img src={service.image.src} alt={service.image.alt} />
+                  <ResponsiveImage
+                    image={service.image}
+                    sizes="(max-width: 1023px) 100vw, 50vw"
+                  />
                 </figure>
               </ScrollReveal>
               <ScrollReveal>
@@ -66,7 +70,10 @@ export default function Services() {
           <ul className="commodity-grid">
             {commodities.map((item) => (
               <li key={item.id}>
-                <img src={item.image.src} alt={item.image.alt} />
+                <ResponsiveImage
+                  image={item.image}
+                  sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 25vw"
+                />
                 <span>{item.title}</span>
               </li>
             ))}
@@ -84,7 +91,7 @@ export default function Services() {
           </ScrollReveal>
           <ScrollReveal>
             <figure className="media-frame">
-              <img src={images.facility.src} alt={images.facility.alt} />
+              <ResponsiveImage image={images.facility} sizes="(max-width: 1023px) 100vw, 50vw" />
             </figure>
           </ScrollReveal>
         </div>

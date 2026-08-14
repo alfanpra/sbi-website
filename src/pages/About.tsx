@@ -2,6 +2,7 @@ import { BadgeCheck, Briefcase, Leaf, ShieldCheck, Users, type LucideIcon } from
 import PageHero from '../components/PageHero';
 import ScrollReveal from '../components/ScrollReveal';
 import CertificationBar from '../components/CertificationBar';
+import ResponsiveImage from '../components/ResponsiveImage';
 import { images } from '../data/images';
 import { companyProfile, missions, vision } from '../data/missions';
 import { values } from '../data/values';
@@ -28,7 +29,10 @@ export default function About() {
         <div className="container split">
           <ScrollReveal>
             <figure className="media-frame media-frame-skyline">
-              <img src={images.jakartaOffice.src} alt={images.jakartaOffice.alt} />
+              <ResponsiveImage
+                image={images.jakartaOffice}
+                sizes="(max-width: 1023px) 100vw, 50vw"
+              />
             </figure>
           </ScrollReveal>
           <ScrollReveal>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
 import ScrollReveal from '../components/ScrollReveal';
+import ResponsiveImage from '../components/ResponsiveImage';
 import { images } from '../data/images';
 import { divisions, teamMembers } from '../data/team';
 import type { TeamMember } from '../types';
@@ -16,7 +17,7 @@ function PersonCard({ member, featured = false }: PersonCardProps) {
     <article className={`person ${featured ? 'person-featured' : ''}`}>
       <div className="person-photo" aria-hidden="true">
         {member.photo ? (
-          <img src={member.photo} alt="" />
+          <img src={member.photo} alt="" width={440} height={440} loading="lazy" decoding="async" />
         ) : (
           <span>
             {member.position
@@ -93,7 +94,7 @@ export default function Team() {
           </ScrollReveal>
           <ScrollReveal>
             <figure className="media-frame">
-              <img src={images.network.src} alt={images.network.alt} />
+              <ResponsiveImage image={images.network} sizes="(max-width: 1023px) 100vw, 50vw" />
             </figure>
           </ScrollReveal>
         </div>

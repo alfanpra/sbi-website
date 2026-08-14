@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import ScrollReveal from '../components/ScrollReveal';
 import CtaBanner from '../components/CtaBanner';
+import ResponsiveImage from '../components/ResponsiveImage';
 import { company } from '../data/company';
 import { images } from '../data/images';
 import { companyIntro, qualityCommitment } from '../data/missions';
@@ -31,17 +32,17 @@ const valueIcons: Record<ValueId, LucideIcon> = {
   sustainability: Leaf,
 };
 
+const splitSizes = '(max-width: 1023px) 100vw, 50vw';
+
 export default function Home() {
   return (
     <>
       <section className="hero">
-        <img
+        <ResponsiveImage
+          image={images.heroOcean}
           className="hero-media"
-          src={images.heroOcean.src}
-          alt={images.heroOcean.alt}
-          width={2400}
-          height={1350}
-          fetchPriority="high"
+          sizes="100vw"
+          priority
         />
         <div className="hero-veil" />
         <div className="container hero-copy">
@@ -65,7 +66,7 @@ export default function Home() {
         <div className="container split">
           <ScrollReveal>
             <figure className="media-frame">
-              <img src={images.aquaculture.src} alt={images.aquaculture.alt} />
+              <ResponsiveImage image={images.aquaculture} sizes={splitSizes} />
             </figure>
           </ScrollReveal>
           <ScrollReveal>
@@ -111,7 +112,7 @@ export default function Home() {
           </ScrollReveal>
           <ScrollReveal>
             <figure className="media-frame media-frame-upper">
-              <img src={images.coldChain.src} alt={images.coldChain.alt} />
+              <ResponsiveImage image={images.coldChain} sizes={splitSizes} />
             </figure>
           </ScrollReveal>
         </div>

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { company, navItems } from '../data/company';
+import { telHref } from '../data/seo';
 import Logo from './Logo';
 
 export default function Footer() {
@@ -35,7 +36,7 @@ export default function Footer() {
             {company.address.city}
             <br />
             {company.phones.map((phone) => (
-              <a key={phone} href={`tel:${phone}`}>
+              <a key={phone} href={telHref(phone)}>
                 {phone}
               </a>
             ))}

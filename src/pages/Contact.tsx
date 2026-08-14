@@ -2,9 +2,11 @@ import { Clock, Mail, MapPin, Phone } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import ContactForm from '../components/ContactForm';
 import FaqAccordion from '../components/FaqAccordion';
+import MapEmbed from '../components/MapEmbed';
 import { company } from '../data/company';
 import { images } from '../data/images';
 import { faqs } from '../data/faq';
+import { telHref } from '../data/seo';
 
 export default function Contact() {
   return (
@@ -39,7 +41,7 @@ export default function Contact() {
               <div>
                 <h3>Telepon</h3>
                 {company.phones.map((phone) => (
-                  <a key={phone} href={`tel:${phone}`}>
+                  <a key={phone} href={telHref(phone)}>
                     {phone}
                   </a>
                 ))}
@@ -75,14 +77,7 @@ export default function Contact() {
         <div className="container">
           <h2 className="section-title">Lokasi</h2>
           <p className="map-caption">Kantor pusat di Cakung, Jakarta Timur</p>
-          <div className="map-frame">
-            <iframe
-              title="Peta kantor PT Samudra Biru Indonesia di Cakung, Jakarta Timur"
-              src={company.mapEmbed}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
+          <MapEmbed />
           <a className="text-link on-dark" href={company.mapLink} target="_blank" rel="noreferrer">
             Buka di Google Maps
           </a>
