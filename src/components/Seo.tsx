@@ -64,12 +64,14 @@ export default function Seo() {
     upsertMeta('property', 'og:url', canonical);
     upsertMeta('property', 'og:image', ogImage);
     upsertMeta('property', 'og:image:alt', OG_IMAGE_ALT);
+    upsertMeta('property', 'og:image:type', 'image/jpeg');
     upsertMeta('property', 'og:image:width', '1200');
     upsertMeta('property', 'og:image:height', '630');
     upsertMeta('name', 'twitter:card', 'summary_large_image');
     upsertMeta('name', 'twitter:title', page.title);
     upsertMeta('name', 'twitter:description', page.description);
     upsertMeta('name', 'twitter:image', ogImage);
+    upsertMeta('name', 'twitter:image:alt', OG_IMAGE_ALT);
     upsertLink('canonical', canonical);
     upsertJsonLd(jsonLdGraph(pathname));
   }, [pathname]);

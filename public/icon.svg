@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="PT Samudra Biru Indonesia">
+  <rect width="512" height="512" fill="#12243a"/>
+  <path d="M108 318c44-26 76-26 116 0s76 26 120 0 74-26 116 0" fill="none" stroke="#d4a017" stroke-width="16" stroke-linecap="round"/>
+  <path d="M108 366c44-26 76-26 116 0s76 26 120 0 74-26 116 0" fill="none" stroke="#d4a017" stroke-width="11" stroke-linecap="round" opacity=".55"/>
+  <path d="M256 86l112 224H144Z" fill="#1e4a73"/>
+  <path d="M256 86l112 224H256Z" fill="#2a6a9a"/>
+  <path d="M256 118v176" stroke="#e8eef4" stroke-width="6" opacity=".35"/>
+  <path d="M352 118c19 3 34 18 37 35-14-3-27-2-38 10 1-18 1-32 1-45z" fill="#d4a017"/>
+  <circle cx="160" cy="198" r="11" fill="#a07820"/>
+</svg>
