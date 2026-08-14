@@ -8,7 +8,7 @@ type FaqAccordionProps = {
 
 export default function FaqAccordion({ items }: FaqAccordionProps) {
   const baseId = useId();
-  const [openId, setOpenId] = useState<string | null>(items[0]?.id ?? null);
+  const [openId, setOpenId] = useState<string | null>(null);
   const triggers = useRef<Array<HTMLButtonElement | null>>([]);
 
   useEffect(() => {
@@ -52,7 +52,9 @@ export default function FaqAccordion({ items }: FaqAccordionProps) {
               </button>
             </h3>
             <div id={panelId} role="region" aria-labelledby={buttonId} className="faq-panel">
-              <p>{item.answer}</p>
+              <div className="faq-panel-inner">
+                <p>{item.answer}</p>
+              </div>
             </div>
           </div>
         );

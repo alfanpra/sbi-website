@@ -19,7 +19,7 @@ export const company = {
     saturday: 'Sabtu 08.00–12.00 WIB',
   },
   mapEmbed:
-    'https://www.google.com/maps?q=Jl.+Sentra+Primer+No.60+Pulo+Gebang+Cakung+Jakarta+Timur&output=embed',
+    'https://maps.google.com/maps?q=Jl.+Sentra+Primer+No.60,+Pulo+Gebang,+Cakung,+Jakarta+Timur&hl=id&z=16&ie=UTF8&iwloc=&output=embed',
   mapLink:
     'https://www.google.com/maps/search/?api=1&query=Jl.+Sentra+Primer+No.60+Pulo+Gebang+Cakung+Jakarta+Timur',
 } as const;
