@@ -510,6 +510,7 @@ textarea {
   overflow: hidden;
 }
 .hero-media {
+  object-fit: cover;
   position: absolute;
   inset: 0;
   width: 100%;
@@ -564,6 +565,7 @@ textarea {
   overflow: hidden;
 }
 .page-hero-img {
+  object-fit: cover;
   position: absolute;
   inset: 0;
   width: 100%;

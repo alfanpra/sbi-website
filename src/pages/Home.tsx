@@ -38,12 +38,7 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <ResponsiveImage
-          image={images.heroOcean}
-          className="hero-media"
-          sizes="100vw"
-          priority
-        />
+        <video src="/images/background.webm" className="hero-media" autoPlay loop muted playsInline />
         <div className="hero-veil" />
         <div className="container hero-copy">
           <h1 className="hero-title">{company.tagline}</h1>
