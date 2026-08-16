@@ -2,10 +2,10 @@ import type { NavItem } from '../types';
 
 export const company = {
   name: 'PT Samudra Biru Indonesia',
-  tagline: 'Perdagangan Terpercaya. Kemitraan Berkelanjutan.',
+  tagline: 'Trusted Trade. Lasting Partnerships.',
   logoTagline: "SEAFOOD | SPICES | BIRD'S NEST | EXPORT",
   shortDescription:
-    'Mitra usaha terpercaya dalam budidaya, perdagangan, dan distribusi komoditas perikanan serta berbagai produk perdagangan.',
+    'Your business partner in the cultivation, trading, and distribution of fishery commodities and a wide range of commercial goods.',
   address: {
     street: 'Jl. Sentra Primer No.60 RT.13/RW.8, Pulo Gebang',
     district: 'Kec. Cakung, Kota Jakarta Timur',
@@ -15,19 +15,19 @@ export const company = {
   phones: ['082376209524', '085863500002'],
   email: 'ptsamudrabiruindonesia@gmail.com',
   hours: {
-    weekday: 'Senin–Jumat 08.00–17.00 WIB',
-    saturday: 'Sabtu 08.00–12.00 WIB',
+    weekday: 'Monday–Friday 08.00–17.00 WIB',
+    saturday: 'Saturday 08.00–12.00 WIB',
   },
   mapEmbed:
-    'https://maps.google.com/maps?q=Jl.+Sentra+Primer+No.60,+Pulo+Gebang,+Cakung,+Jakarta+Timur&hl=id&z=16&ie=UTF8&iwloc=&output=embed',
+    'https://maps.google.com/maps?q=Jl.+Sentra+Primer+No.60,+Pulo+Gebang,+Cakung,+Jakarta+Teamur&hl=id&z=16&ie=UTF8&iwloc=&output=embed',
   mapLink:
-    'https://www.google.com/maps/search/?api=1&query=Jl.+Sentra+Primer+No.60+Pulo+Gebang+Cakung+Jakarta+Timur',
+    'https://www.google.com/maps/search/?api=1&query=Jl.+Sentra+Primer+No.60+Pulo+Gebang+Cakung+Jakarta+Teamur',
 } as const;
 
 export const navItems: NavItem[] = [
-  { to: '/', label: 'Beranda' },
-  { to: '/about', label: 'Tentang Kami' },
-  { to: '/services', label: 'Layanan' },
-  { to: '/team', label: 'Tim' },
-  { to: '/contact', label: 'Hubungi Kami' },
+  { to: '/', label: 'Home' },
+  { to: '/about', label: 'About Us' },
+  { to: '/services', label: 'Services' },
+  { to: '/team', label: 'Team' },
+  { to: '/contact', label: 'Contact Us' },
 ];

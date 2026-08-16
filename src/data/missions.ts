@@ -1,49 +1,53 @@
 import type { Mission } from '../types';
 
 export const vision =
-  'Menjadi perusahaan yang terpercaya dan berdaya saing dalam bidang perikanan, perdagangan, dan distribusi dengan jaringan usaha yang luas dan berkelanjutan.';
+  'To become a trusted and competitive company in fisheries, trading, and distribution — with an extensive and sustainable business network.';
 
 export const missions: Mission[] = [
   {
     number: 1,
-    title: 'Menyediakan Produk Berkualitas',
-    body: 'Menyediakan dan memperdagangkan komoditas perikanan serta berbagai produk perdagangan dengan memperhatikan kualitas dan kebutuhan pasar.',
+    title: 'Deliver Quality Products',
+    body: 'To supply and trade fishery commodities and a wide range of commercial products with quality standards that meet market needs.',
   },
   {
     number: 2,
-    title: 'Mengembangkan Usaha Perikanan',
-    body: 'Mengembangkan kegiatan budidaya ikan dan biota air laut secara profesional dan berkelanjutan.',
+    title: 'Develop Fishery Operations',
+    body: 'To develop finfish and marine aquaculture activities in a professional, measurable, and sustainable manner.',
   },
   {
     number: 3,
-    title: 'Membangun Kemitraan Jangka Panjang',
-    body: 'Membangun hubungan bisnis yang terpercaya, profesional, dan saling menguntungkan dengan pelanggan, pemasok, distributor, dan mitra usaha.',
+    title: 'Build Long-Term Partnerships',
+    body: 'To establish trusted, professional, and mutually beneficial business relationships with customers, suppliers, distributors, and business partners.',
   },
   {
     number: 4,
-    title: 'Memperluas Jaringan Perdagangan',
-    body: 'Mengembangkan jaringan perdagangan dan distribusi untuk menjangkau pasar yang lebih luas serta menciptakan peluang usaha baru.',
+    title: 'Expand Trading Networks',
+    body: 'To develop trading and distribution networks that reach broader markets while creating new business opportunities.',
   },
   {
     number: 5,
-    title: 'Menjunjung Integritas dan Profesionalisme',
-    body: 'Menjalankan setiap kegiatan usaha dengan integritas, tanggung jawab, transparansi, dan standar profesional.',
+    title: 'Uphold Integrity and Professionalism',
+    body: 'To conduct every business activity with integrity, accountability, transparency, and the highest professional standards.',
   },
   {
     number: 6,
-    title: 'Menciptakan Pertumbuhan Berkelanjutan',
-    body: 'Mendorong pertumbuhan perusahaan melalui pengembangan pasar, inovasi, peningkatan kualitas, dan penciptaan nilai tambah.',
+    title: 'Drive Sustainable Growth',
+    body: 'To drive company growth through market development, innovation, quality improvement, and tangible value creation.',
   },
 ];
 
 export const companyProfile = [
-  'PT Samudra Biru Indonesia merupakan perusahaan yang bergerak dalam bidang budidaya, perdagangan, dan distribusi komoditas perikanan serta berbagai produk perdagangan.',
-  'Dengan ruang lingkup kegiatan usaha yang mencakup budidaya ikan bersirip dan biota air laut lainnya, perdagangan besar ikan dan biota air hidup, perdagangan produk perikanan, perdagangan bahan makanan dan minuman, perdagangan atas dasar balas jasa atau kontrak, serta perdagangan besar berbagai macam barang, kami hadir sebagai mitra usaha yang mengutamakan kualitas, profesionalisme, dan kepercayaan.',
-  'PT Samudra Biru Indonesia berkomitmen untuk membangun kegiatan usaha yang profesional dan berkelanjutan melalui pengembangan jaringan perdagangan, kemitraan strategis, serta pelayanan yang mampu menjawab kebutuhan pasar.',
-  'Kami percaya bahwa keberhasilan bisnis dibangun melalui produk yang berkualitas, pelayanan yang konsisten, serta hubungan kemitraan yang saling memberikan nilai.',
+  'PT Samudra Biru Indonesia is a company operating in the cultivation, trading, and distribution of fishery commodities and a diverse range of commercial products.',
+  'Our business activities encompass finfish and marine aquaculture, wholesale trade in live fish and aquatic organisms, fishery product trading, food and beverage commodity trading, contract-based and fee-based trading, as well as wholesale trade in general merchandise.',
+  'With this breadth of coverage, we strive to be a business partner that offers flexibility in meeting a wide range of trading and procurement needs.',
+  'PT Samudra Biru Indonesia is committed to building professional and sustainable business operations — through the development of trading networks, strategic partnerships, and services that are responsive to market needs.',
+  'We believe that business success is built on quality products, consistent service, and partnerships that deliver mutual value.',
 ];
 
-export const companyIntro = companyProfile.slice(0, 2);
+export const companyIntro = [
+  'PT Samudra Biru Indonesia operates in the cultivation, trading, and distribution of fishery commodities as well as a diverse range of commercial products.',
+  'Our scope of business spans finfish and marine aquaculture, wholesale trade in live fish and aquatic organisms, fishery product trading, food and beverage commodity trading, contract-based procurement, and general merchandise — all designed to address procurement and trading needs with professionalism.',
+];
 
 export const qualityCommitment =
-  'Kami percaya bahwa keberhasilan bisnis dibangun melalui produk yang berkualitas, pelayanan yang konsisten, serta hubungan kemitraan yang saling memberikan nilai. Setiap kiriman melalui pemeriksaan mutu, rantai dingin, dan dokumentasi yang dapat ditelusuri.';
+  'In carrying out our operations, PT Samudra Biru Indonesia is committed to maintaining product quality standards while meeting the needs of our partners with professionalism. Every trading process is developed with market demand, supply reliability, and long-term relationships in mind. For us, quality is not just about the product a customer receives — it is also about how a partnership is managed from start to finish.';

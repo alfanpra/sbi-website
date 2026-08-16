@@ -11,16 +11,16 @@ export default function Services() {
   return (
     <>
       <PageHero
-        title="Bidang Usaha"
-        subtitle="Jangkauan layanan perdagangan dan distribusi"
+        title="Business Areas"
+        subtitle="Integrated Trading Reach Aligned with Market Needs"
         image={images.coldChain}
       />
 
       <section className="section section-light intro-split">
         <div className="container intro-split-grid">
           <p className="lede">
-            Dari budidaya hingga perdagangan besar, kami menanggung pengadaan komoditas perikanan,
-            bahan makanan, dan barang umum melalui satu mitra yang dapat dihubungi langsung.
+            We build our trading operations by connecting product sources, suppliers, procurement processes, and distribution to customers in an integrated manner.
+            With a broad scope of business, we have the flexibility to tailor trading solutions — whether in terms of commodity type, volume, specifications, or partnership model — to the specific needs of each partner.
           </p>
           <ul className="intro-scope">
             {services.map((service) => (
@@ -48,7 +48,7 @@ export default function Services() {
                   <h2>{service.title}</h2>
                   <p>{service.body}</p>
                   <Link to="/contact" className="btn btn-gold">
-                    Minta Penawaran
+                    Request a Quote
                   </Link>
                 </div>
               </ScrollReveal>
@@ -59,14 +59,14 @@ export default function Services() {
 
       <section className="section section-mid">
         <div className="container">
-          <h2 className="section-title on-light">Rantai Pasokan</h2>
+          <h2 className="section-title on-light">Supply Chain</h2>
           <SupplyChainFlow />
         </div>
       </section>
 
       <section className="section section-dark">
         <div className="container">
-          <h2 className="section-title">Komoditas Unggulan</h2>
+          <h2 className="section-title">Featured Commodities</h2>
           <ul className="commodity-grid">
             {commodities.map((item) => (
               <li key={item.id}>
@@ -85,7 +85,7 @@ export default function Services() {
         <div className="container split">
           <ScrollReveal>
             <div className="prose">
-              <h2>Jaminan Mutu</h2>
+              <h2>Quality Assurance</h2>
               <p>{qualityAssurance}</p>
             </div>
           </ScrollReveal>
@@ -97,7 +97,7 @@ export default function Services() {
         </div>
       </section>
 
-      <CtaBanner heading="Butuh Penawaran Khusus?" label="Hubungi Kami" />
+      <CtaBanner heading="Need a Custom Quote?" label="Contact Us" />
     </>
   );
 }

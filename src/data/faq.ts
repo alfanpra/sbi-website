@@ -3,32 +3,32 @@ import type { FaqItem } from '../types';
 export const faqs: FaqItem[] = [
   {
     id: 'moq',
-    question: 'Berapa minimum order quantity (MOQ) untuk pembelian grosir?',
+    question: 'What is the minimum order quantity (MOQ) for wholesale purchases?',
     answer:
-      'MOQ bervariasi tergantung jenis komoditas. Ikan segar dan biota air hidup mulai dari 100 kg. Produk olahan dan bahan makanan dapat disesuaikan. Hubungi kami untuk diskusi.',
+      'MOQ varies depending on the type of commodity and procurement needs. For fresh fish and live aquatic organisms, MOQ starts at 100 kg. Processed products and food commodities can be adjusted to your requirements. Contact us to discuss the most suitable order volume.',
   },
   {
     id: 'payment',
-    question: 'Bagaimana sistem pembayaran yang berlaku?',
+    question: 'What are the payment terms?',
     answer:
-      'Transfer bank dengan terms yang dapat dinegosiasikan (COD, Net 14, Net 30) tergantung volume dan frekuensi. Skema kredit tersedia untuk kemitraan jangka panjang.',
+      'Payment is made via bank transfer with terms that can be negotiated based on volume and transaction frequency. Options such as COD, Net 14, and Net 30 are available and can be discussed based on the form of partnership. Credit arrangements are also possible for long-term partnerships.',
   },
   {
     id: 'freshness',
-    question: 'Bagaimana jaminan kesegaran produk?',
+    question: 'How do you ensure product freshness?',
     answer:
-      'Sistem cold chain management dari titik produksi hingga pengiriman. Kendaraan berpendingin dan fasilitas penyimpanan berstandar suhu terkontrol di setiap tahapan.',
+      'For products requiring temperature-controlled handling, we implement a cold chain system from the point of production through to delivery. Refrigerated vehicles and temperature-controlled storage facilities are used to maintain product quality and freshness throughout the distribution process.',
   },
   {
     id: 'permits',
-    question: 'Apakah perusahaan memiliki izin usaha yang lengkap?',
+    question: 'Does the company hold the necessary business licenses?',
     answer:
-      'Ya — NIB, izin usaha perdagangan, dan sertifikasi sesuai regulasi pemerintah. Detail sertifikasi disampaikan dalam proses kerjasama.',
+      'PT Samudra Biru Indonesia holds a Business Identification Number (NIB), trading licenses, and certifications in compliance with government regulations. Documentation details and supporting certificates can be provided during the partnership process as needed.',
   },
   {
     id: 'partner',
-    question: 'Bagaimana proses menjadi mitra usaha?',
+    question: 'What is the process for becoming a business partner?',
     answer:
-      'Hubungi kami via formulir atau kontak langsung. Tim merespons dalam 1×24 jam kerja untuk mendiskusikan kebutuhan dan potensi kerjasama.',
+      "You can reach us through the contact form, phone, or email. Share your needs and the type of partnership you'd like to explore — our team will respond within 1×24 business hours to discuss your requirements and collaboration potential.",
   },
 ];

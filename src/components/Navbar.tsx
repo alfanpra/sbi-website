@@ -45,11 +45,11 @@ export default function Navbar() {
   return (
     <header className={`nav ${solid ? 'is-solid' : 'is-transparent'}`}>
       <div className="nav-inner">
-        <Link to="/" className="nav-brand" aria-label="PT Samudra Biru Indonesia — Beranda">
+        <Link to="/" className="nav-brand" aria-label="PT Samudra Biru Indonesia — Home">
           <Logo />
         </Link>
 
-        <nav className="nav-links" aria-label="Utama">
+        <nav className="nav-links" aria-label="Main">
           {navItems.map((item) => (
             <NavLink
               key={item.to}
@@ -63,13 +63,13 @@ export default function Navbar() {
         </nav>
 
         <Link to="/contact" className="btn btn-gold nav-cta">
-          Hubungi Kami
+          Contact Us
         </Link>
 
         <button
           type="button"
           className="nav-toggle"
-          aria-label={open ? 'Tutup menu' : 'Buka menu'}
+          aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
           aria-controls="mobile-drawer"
           onClick={() => setOpen((v) => !v)}
@@ -90,7 +90,7 @@ export default function Navbar() {
         className={`nav-drawer ${open ? 'is-open' : ''}`}
         aria-hidden={!open}
       >
-        <nav aria-label="Menu seluler">
+        <nav aria-label="Mobile menu">
           {navItems.map((item) => (
             <NavLink
               key={item.to}
@@ -103,7 +103,7 @@ export default function Navbar() {
           ))}
         </nav>
         <Link to="/contact" className="btn btn-gold drawer-cta">
-          Hubungi Kami
+          Contact Us
         </Link>
       </div>
     </header>

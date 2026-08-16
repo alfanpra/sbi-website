@@ -9,7 +9,7 @@ type CtaBannerProps = {
 export default function CtaBanner({
   heading,
   to = '/contact',
-  label = 'Hubungi Kami',
+  label = 'Contact Us',
 }: CtaBannerProps) {
   return (
     <section className="cta-banner">

@@ -14,7 +14,7 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 function PageFallback() {
   return (
     <div className="page-fallback" role="status">
-      Memuat halaman…
+      Loading page…
     </div>
   );
 }
@@ -30,7 +30,7 @@ export default function App() {
     <>
       <Seo />
       <a className="skip-link" href="#main">
-        Lewati ke konten
+        Skip to content
       </a>
       <Navbar />
       <main id="main">

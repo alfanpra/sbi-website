@@ -12,7 +12,7 @@ type PersonCardProps = {
 };
 
 function PersonCard({ member, featured = false }: PersonCardProps) {
-  const displayName = member.name.trim() || 'Nama menyusul';
+  const displayName = member.name.trim() || 'Name TBA';
   return (
     <article className={`person ${featured ? 'person-featured' : ''}`}>
       <div className="person-photo" aria-hidden="true">
@@ -44,16 +44,16 @@ export default function Team() {
   return (
     <>
       <PageHero
-        title="Tim Kami"
-        subtitle="Orang-orang di balik PT Samudra Biru Indonesia"
+        title="Our Team"
+        subtitle="The people behind PT Samudra Biru Indonesia"
         image={images.teamCorporate}
       />
 
       <section className="section section-light">
         <div className="container">
-          <h2 className="section-title on-light">Kepemimpinan</h2>
+          <h2 className="section-title on-light">Leadership</h2>
           <p className="team-note">
-            Profil lengkap akan dilengkapi oleh perusahaan. Struktur jabatan berikut sudah ditetapkan.
+            Individual names, actual titles, photos, and bios will be added once data is provided by the client.
           </p>
           <ScrollReveal>
             <PersonCard member={lead} featured />
@@ -68,7 +68,7 @@ export default function Team() {
 
       <section className="section section-dark">
         <div className="container">
-          <h2 className="section-title">Divisi Organisasi</h2>
+          <h2 className="section-title">Organizational Divisions</h2>
           <div className="division-grid">
             {divisions.map((division) => (
               <article key={division.id}>
@@ -84,11 +84,11 @@ export default function Team() {
         <div className="container split">
           <ScrollReveal>
             <div className="prose">
-              <h2>Jaringan Mitra</h2>
+              <h2>Partner Network</h2>
               <p>
-                Operasi kami ditopang kemitraan dengan koperasi nelayan, hatchery, cold storage, dan
-                mitra logistik. Jaringan ini memungkinkan pasokan yang konsisten tanpa memutus rantai
-                dingin dari lokasi produksi hingga pembeli.
+                Trading doesn't happen in isolation. PT Samudra Biru Indonesia actively builds relationships with various stakeholders across the supply chain — including fishing cooperatives, hatcheries, cold storage facilities, logistics partners, suppliers, distributors, customers, and other business partners.
+                We believe that a strong network creates a more effective supply chain while unlocking sustainable collaboration opportunities for all parties involved.
+                
               </p>
             </div>
           </ScrollReveal>
@@ -103,14 +103,14 @@ export default function Team() {
       <section className="section section-mid">
         <div className="container join-band">
           <div>
-            <h2>Bergabung Bersama Kami</h2>
+            <h2>Join Us</h2>
             <p>
-              Kami membuka ruang bagi talenta operasional dan mitra strategis yang ingin membangun
-              perdagangan perikanan yang dapat diandalkan.
+              We are open to collaboration opportunities — whether with talented professionals, suppliers, customers, or strategic partners who share a vision for building long-term business relationships.
+              If you see an opportunity to work with PT Samudra Biru Indonesia, we are ready to discuss your needs and the potential for collaboration.
             </p>
           </div>
           <Link to="/contact" className="btn btn-gold">
-            Hubungi Kami
+            Contact Us
           </Link>
         </div>
       </section>

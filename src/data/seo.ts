@@ -3,7 +3,7 @@ import { faqs } from "./faq";
 
 export const SITE_NAME = company.name;
 export const OG_IMAGE_PATH = "/og.jpg";
-export const OG_IMAGE_ALT = "Permukaan samudra biru saat fajar — PT Samudra Biru Indonesia";
+export const OG_IMAGE_ALT = "Blue ocean surface at dawn — PT Samudra Biru Indonesia";
 export const LOGO_PATH = "/icon-512.png";
 
 export const ROUTES = [
@@ -24,45 +24,45 @@ export type SeoPage = {
 export const pages: Record<string, SeoPage> = {
   "/": {
     path: "/",
-    title: "PT Samudra Biru Indonesia — Perdagangan Terpercaya",
+    title: "PT Samudra Biru Indonesia — Trusted Trade",
     description:
-      "Mitra usaha budidaya, perdagangan, dan distribusi komoditas perikanan serta bahan makanan. Kantor di Cakung, Jakarta Timur.",
+      "Your business partner in cultivation, trading, and distribution of fishery commodities and food supplies. Based in Cakung, East Jakarta.",
     index: true,
   },
   "/about": {
     path: "/about",
-    title: "Tentang Kami — PT Samudra Biru Indonesia",
+    title: "About Us — PT Samudra Biru Indonesia",
     description:
-      "Profil, visi, misi, dan nilai PT Samudra Biru Indonesia — operator perdagangan perikanan dan komoditas berbasis Jakarta Timur.",
+      "Profile, vision, mission, and values of PT Samudra Biru Indonesia — a fishery and commodity trading operator based in East Jakarta.",
     index: true,
   },
   "/services": {
     path: "/services",
-    title: "Layanan & Bidang Usaha — PT Samudra Biru Indonesia",
+    title: "Services & Business Areas — PT Samudra Biru Indonesia",
     description:
-      "Enam bidang usaha: budidaya, ikan hidup, produk perikanan, bahan F&B, perdagangan kontrak, dan barang umum — satu mitra pengadaan.",
+      "Six business areas: aquaculture, live fish, fishery products, F&B supplies, contract trading, and general merchandise — one procurement partner.",
     index: true,
   },
   "/team": {
     path: "/team",
-    title: "Tim — PT Samudra Biru Indonesia",
+    title: "Team — PT Samudra Biru Indonesia",
     description:
-      "Struktur kepemimpinan dan divisi PT Samudra Biru Indonesia. Hubungi kami untuk kemitraan atau peluang bergabung.",
+      "Leadership structure and divisions of PT Samudra Biru Indonesia. Contact us for partnerships or collaboration opportunities.",
     index: true,
   },
   "/contact": {
     path: "/contact",
-    title: "Hubungi Kami — PT Samudra Biru Indonesia",
+    title: "Contact Us — PT Samudra Biru Indonesia",
     description:
-      "Kantor Cakung, Jakarta Timur. Telepon, email, jam kerja, dan formulir permintaan penawaran PT Samudra Biru Indonesia.",
+      "Cakung office, East Jakarta. Phone, email, business hours, and inquiry form for PT Samudra Biru Indonesia.",
     index: true,
   },
 };
 
 export const notFoundPage: SeoPage = {
   path: "",
-  title: "Halaman tidak ditemukan — PT Samudra Biru Indonesia",
-  description: "Alamat yang dibuka tidak ada di situs PT Samudra Biru Indonesia.",
+  title: "Page not found — PT Samudra Biru Indonesia",
+  description: "The requested page does not exist on the PT Samudra Biru Indonesia website.",
   index: false,
 };
 
@@ -116,7 +116,7 @@ export function jsonLdGraph(pathname: string): JsonLd {
     address: {
       "@type": "PostalAddress",
       streetAddress: "Jl. Sentra Primer No.60 RT.13/RW.8, Pulo Gebang",
-      addressLocality: "Jakarta Timur",
+      addressLocality: "East Jakarta",
       addressRegion: "DKI Jakarta",
       postalCode: "13950",
       addressCountry: "ID",
@@ -144,7 +144,7 @@ export function jsonLdGraph(pathname: string): JsonLd {
     url: canonical,
     name: page.title,
     description: page.description,
-    inLanguage: "id-ID",
+    inLanguage: "en-US",
     isPartOf: { "@id": site ? `${site}/#website` : "#website" },
     about: { "@id": site ? `${site}/#organization` : "#organization" },
   };
@@ -154,15 +154,15 @@ export function jsonLdGraph(pathname: string): JsonLd {
     "@id": site ? `${site}/#website` : "#website",
     url: site || undefined,
     name: company.name,
-    inLanguage: "id-ID",
+    inLanguage: "en-US",
     publisher: { "@id": site ? `${site}/#organization` : "#organization" },
   };
 
-  const crumbs = [{ name: "Beranda", path: "/" }];
-  if (pathname === "/about") crumbs.push({ name: "Tentang Kami", path: "/about" });
-  if (pathname === "/services") crumbs.push({ name: "Layanan", path: "/services" });
-  if (pathname === "/team") crumbs.push({ name: "Tim", path: "/team" });
-  if (pathname === "/contact") crumbs.push({ name: "Hubungi Kami", path: "/contact" });
+  const crumbs = [{ name: "Home", path: "/" }];
+  if (pathname === "/about") crumbs.push({ name: "About Us", path: "/about" });
+  if (pathname === "/services") crumbs.push({ name: "Services", path: "/services" });
+  if (pathname === "/team") crumbs.push({ name: "Team", path: "/team" });
+  if (pathname === "/contact") crumbs.push({ name: "Contact Us", path: "/contact" });
 
   const breadcrumb: JsonLd = {
     "@type": "BreadcrumbList",

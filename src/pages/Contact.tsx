@@ -12,20 +12,20 @@ export default function Contact() {
   return (
     <>
       <PageHero
-        title="Hubungi Kami"
-        subtitle="Kami siap menjadi mitra usaha Anda"
+        title="Contact Us"
+        subtitle="We're ready to be your business partner"
         image={images.jakartaOffice}
       />
 
       <section className="section section-light">
         <div className="container contact-split">
           <aside className="contact-info">
-            <h2>Informasi Kontak</h2>
+            <h2>Contact Information</h2>
 
             <div className="contact-block">
               <MapPin size={20} strokeWidth={1.6} aria-hidden="true" />
               <div>
-                <h3>Alamat</h3>
+                <h3>Address</h3>
                 <address>
                   {company.address.street}
                   <br />
@@ -39,7 +39,7 @@ export default function Contact() {
             <div className="contact-block">
               <Phone size={20} strokeWidth={1.6} aria-hidden="true" />
               <div>
-                <h3>Telepon</h3>
+                <h3>Phone</h3>
                 {company.phones.map((phone) => (
                   <a key={phone} href={telHref(phone)}>
                     {phone}
@@ -59,7 +59,7 @@ export default function Contact() {
             <div className="contact-block">
               <Clock size={20} strokeWidth={1.6} aria-hidden="true" />
               <div>
-                <h3>Jam Kerja</h3>
+                <h3>Business Hours</h3>
                 <p>{company.hours.weekday}</p>
                 <p>{company.hours.saturday}</p>
               </div>
@@ -67,7 +67,7 @@ export default function Contact() {
           </aside>
 
           <div>
-            <h2>Formulir Pertanyaan</h2>
+            <h2>Contact Form</h2>
             <ContactForm />
           </div>
         </div>
@@ -75,18 +75,18 @@ export default function Contact() {
 
       <section className="section section-dark map-section">
         <div className="container">
-          <h2 className="section-title">Lokasi</h2>
-          <p className="map-caption">Kantor pusat di Cakung, Jakarta Timur</p>
+          <h2 className="section-title">Location</h2>
+          <p className="map-caption">Head office in Cakung, East Jakarta</p>
           <MapEmbed />
           <a className="text-link on-dark" href={company.mapLink} target="_blank" rel="noreferrer">
-            Buka di Google Maps
+            Open in Google Maps
           </a>
         </div>
       </section>
 
       <section className="section section-light">
         <div className="container faq-wrap">
-          <h2 className="section-title on-light">Pertanyaan yang Sering Diajukan</h2>
+          <h2 className="section-title on-light">Frequently Asked Questions</h2>
           <FaqAccordion items={faqs} />
         </div>
       </section>

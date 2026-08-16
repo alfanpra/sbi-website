@@ -1,11 +1,11 @@
 import { useId, useState, type ChangeEvent, type FormEvent } from 'react';
 
 const TYPES = [
-  'Penawaran Kerjasama',
-  'Pembelian Grosir',
-  'Pasokan Budidaya',
-  'Kemitraan Kontrak',
-  'Lainnya',
+  'Partnership Inquiry',
+  'Wholesale Purchase',
+  'Aquaculture Supply',
+  'Contract Partnership',
+  'Other',
 ] as const;
 
 type FormValues = {
@@ -46,12 +46,12 @@ export default function ContactForm() {
 
   const validate = (): FormErrors => {
     const next: FormErrors = {};
-    if (!values.type) next.type = 'Pilih jenis pertanyaan.';
-    if (!values.name.trim()) next.name = 'Nama lengkap wajib diisi.';
-    if (!values.email.trim()) next.email = 'Email wajib diisi.';
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) next.email = 'Format email tidak valid.';
-    if (!values.phone.trim()) next.phone = 'Nomor telepon wajib diisi.';
-    if (!values.message.trim()) next.message = 'Pesan wajib diisi.';
+    if (!values.type) next.type = 'Please select an inquiry type.';
+    if (!values.name.trim()) next.name = 'Full name is required.';
+    if (!values.email.trim()) next.email = 'Email is required.';
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) next.email = 'Invalid email format.';
+    if (!values.phone.trim()) next.phone = 'Phone number is required.';
+    if (!values.message.trim()) next.message = 'Message is required.';
     return next;
   };
 
@@ -82,7 +82,7 @@ export default function ContactForm() {
   return (
     <form className="contact-form" onSubmit={onSubmit} noValidate>
       <div className="field">
-        <label htmlFor="inquiry-type">Jenis Pertanyaan</label>
+        <label htmlFor="inquiry-type">Inquiry Type</label>
         <select
           id="inquiry-type"
           name="type"
@@ -92,7 +92,7 @@ export default function ContactForm() {
           aria-invalid={Boolean(errors.type)}
           aria-describedby={errors.type ? errorId('type') : undefined}
         >
-          <option value="">Pilih jenis pertanyaan</option>
+          <option value="">Select inquiry type</option>
           {TYPES.map((type) => (
             <option key={type} value={type}>
               {type}
@@ -107,7 +107,7 @@ export default function ContactForm() {
       </div>
 
       <div className="field">
-        <label htmlFor="full-name">Nama Lengkap</label>
+        <label htmlFor="full-name">Full Name</label>
         <input
           id="full-name"
           name="name"
@@ -127,7 +127,7 @@ export default function ContactForm() {
       </div>
 
       <div className="field">
-        <label htmlFor="company-name">Nama Perusahaan</label>
+        <label htmlFor="company-name">Company Name</label>
         <input
           id="company-name"
           name="company"
@@ -159,7 +159,7 @@ export default function ContactForm() {
           )}
         </div>
         <div className="field">
-          <label htmlFor="phone">Nomor Telepon</label>
+          <label htmlFor="phone">Phone Number</label>
           <input
             id="phone"
             name="phone"
@@ -180,7 +180,7 @@ export default function ContactForm() {
       </div>
 
       <div className="field">
-        <label htmlFor="message">Pesan</label>
+        <label htmlFor="message">Message</label>
         <textarea
           id="message"
           name="message"
@@ -199,12 +199,12 @@ export default function ContactForm() {
       </div>
 
       <button type="submit" className="btn btn-gold">
-        Kirim Pertanyaan
+        Submit Inquiry
       </button>
 
       {success && (
         <p className="form-success" role="status">
-          Terima kasih. Pertanyaan Anda telah kami terima. Tim kami akan merespons dalam 1×24 jam kerja.
+          Thank you. Your inquiry has been received. Our team will respond within 1×24 business hours.
         </p>
       )}
     </form>

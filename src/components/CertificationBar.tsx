@@ -2,8 +2,8 @@ import { BadgeCheck, FileCheck2, ScrollText, ShieldCheck, type LucideIcon } from
 
 const items: Array<{ id: string; label: string; Icon: LucideIcon }> = [
   { id: 'nib', label: 'NIB', Icon: BadgeCheck },
-  { id: 'izin', label: 'Izin Usaha', Icon: ShieldCheck },
-  { id: 'kelayakan', label: 'Sertifikat Kelayakan', Icon: FileCheck2 },
+  { id: 'izin', label: 'Trading Licenses', Icon: ShieldCheck },
+  { id: 'kelayakan', label: 'Compliance Certificates', Icon: FileCheck2 },
   { id: 'sop', label: 'SOP', Icon: ScrollText },
 ];
 

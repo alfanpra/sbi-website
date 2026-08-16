@@ -20,8 +20,8 @@ export default function About() {
   return (
     <>
       <PageHero
-        title="Tentang Kami"
-        subtitle="Mengenal lebih dekat PT Samudra Biru Indonesia"
+        title="About Us"
+        subtitle="Getting to know PT Samudra Biru Indonesia"
         image={images.heroOcean}
       />
 
@@ -37,7 +37,7 @@ export default function About() {
           </ScrollReveal>
           <ScrollReveal>
             <div className="prose">
-              <h2>Profil Perusahaan</h2>
+              <h2>Company Profile</h2>
               {companyProfile.map((p) => (
                 <p key={p.slice(0, 32)}>{p}</p>
               ))}
@@ -48,7 +48,7 @@ export default function About() {
 
       <section className="section section-dark vision">
         <div className="container vision-inner">
-          <h2>Visi</h2>
+          <h2>Vision</h2>
           <blockquote>
             <p>{vision}</p>
           </blockquote>
@@ -57,7 +57,7 @@ export default function About() {
 
       <section className="section section-light">
         <div className="container">
-          <h2 className="section-title on-light">Misi</h2>
+          <h2 className="section-title on-light">Mission</h2>
           <ol className="mission-grid">
             {missions.map((mission) => (
               <li key={mission.number}>
@@ -74,7 +74,7 @@ export default function About() {
 
       <section className="section section-mid">
         <div className="container">
-          <h2 className="section-title on-light">Nilai Perusahaan</h2>
+          <h2 className="section-title on-light">Company Values</h2>
           <div className="value-stagger">
             {values.map((value) => {
               const Icon = valueIcons[value.id];
@@ -92,7 +92,7 @@ export default function About() {
 
       <section className="section section-dark">
         <div className="container">
-          <h2 className="section-title">Sertifikasi & Kepatuhan</h2>
+          <h2 className="section-title">Certifications & Compliance</h2>
           <CertificationBar />
         </div>
       </section>

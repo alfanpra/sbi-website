@@ -10,13 +10,13 @@ export default function Footer() {
         <div>
           <Logo />
           <p className="footer-blurb">
-            Mitra usaha terpercaya dalam budidaya, perdagangan, dan distribusi komoditas perikanan.
+            A company operating in the cultivation, trading, and distribution of fishery commodities and commercial products.
           </p>
           <p className="footer-tagline">{company.logoTagline}</p>
         </div>
 
         <div>
-          <h2 className="footer-heading">Navigasi</h2>
+          <h2 className="footer-heading">Navigation</h2>
           <ul className="footer-list">
             {navItems.map((item) => (
               <li key={item.to}>
@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h2 className="footer-heading">Kontak</h2>
+          <h2 className="footer-heading">Contact</h2>
           <address className="footer-address">
             {company.address.street}
             <br />
@@ -45,14 +45,14 @@ export default function Footer() {
         </div>
 
         <div>
-          <h2 className="footer-heading">Jam Operasional</h2>
+          <h2 className="footer-heading">Business Hours</h2>
           <p>{company.hours.weekday}</p>
           <p>{company.hours.saturday}</p>
         </div>
       </div>
 
       <div className="container footer-bottom">
-        <p>© 2026 {company.name}. Seluruh hak dilindungi.</p>
+        <p>© 2026 {company.name}. All rights reserved.</p>
       </div>
     </footer>
   );

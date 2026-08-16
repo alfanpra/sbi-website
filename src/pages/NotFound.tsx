@@ -5,10 +5,10 @@ export default function NotFound() {
     <section className="page-hero" aria-labelledby="not-found-title">
       <div className="hero-veil" />
       <div className="container page-hero-inner not-found">
-        <h1 id="not-found-title">Halaman tidak ditemukan</h1>
-        <p>Alamat yang dibuka tidak ada di situs ini. Periksa tautan, atau kembali ke beranda.</p>
+        <h1 id="not-found-title">Page not found</h1>
+        <p>The requested page does not exist. Check the link, or return to home.</p>
         <Link to="/" className="btn btn-gold">
-          Kembali ke Beranda
+          Back to Home
         </Link>
       </div>
     </section>

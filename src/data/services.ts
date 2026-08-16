@@ -4,44 +4,44 @@ import { images } from './images';
 export const services: Service[] = [
   {
     id: 'budidaya',
-    title: 'Budidaya Ikan Bersirip & Biota Air Laut',
-    short: 'Budidaya',
-    body: 'Kami mengembangkan kegiatan budidaya ikan bersirip dan biota air laut secara profesional di berbagai lokasi budidaya strategis. Dengan pendekatan berkelanjutan dan penerapan standar mutu yang ketat, kami memastikan setiap hasil budidaya memenuhi kebutuhan pasar domestik maupun internasional.',
+    title: 'Finfish & Marine Aquaculture',
+    short: 'Aquaculture',
+    body: 'We develop finfish and marine aquaculture operations with a professional approach — focused on product quality and long-term sustainability.',
     image: images.aquaculture,
   },
   {
     id: 'ikan-hidup',
-    title: 'Perdagangan Besar Ikan & Biota Air Hidup',
-    short: 'Perdagangan Besar',
-    body: 'Sebagai pedagang besar ikan dan biota air hidup, kami menyediakan akses langsung ke sumber daya perikanan berkualitas. Jaringan pemasok kami yang luas memungkinkan pasokan yang konsisten dengan standar kesegaran dan keamanan pangan yang terjamin.',
+    title: 'Wholesale Live Fish & Aquatic Organisms',
+    short: 'Live Trade',
+    body: 'We supply live fish and aquatic organisms through a reliable network of suppliers capable of supporting consistent, large-scale demand.',
     image: images.fishMarket,
   },
   {
     id: 'produk-perikanan',
-    title: 'Perdagangan Produk & Hasil Perikanan',
-    short: 'Produk Perikanan',
-    body: 'Dari ikan segar hingga produk olahan perikanan, kami memperdagangkan berbagai komoditas hasil laut dengan sistem distribusi berpendingin (cold chain) yang menjaga kualitas dari titik produksi hingga ke tangan pelanggan.',
+    title: 'Fishery Products & Commodities',
+    short: 'Fishery Products',
+    body: 'We trade a wide variety of fishery commodities and products with close attention to quality, freshness, food safety, and specific customer requirements.',
     image: images.frozenSeafood,
   },
   {
     id: 'fnb',
-    title: 'Perdagangan Besar Bahan Makanan & Minuman',
-    short: 'Makanan & Minuman',
-    body: 'Kami memperluas jangkauan usaha ke sektor perdagangan bahan makanan dan minuman, melayani kebutuhan restoran, hotel, katering, dan industri pengolahan makanan dengan pasokan yang andal dan harga yang kompetitif.',
+    title: 'Food & Beverage Commodities',
+    short: 'F&B Commodities',
+    body: 'We serve the food and beverage supply needs of various business sectors, with sourcing that adapts to market dynamics.',
     image: images.fnb,
   },
   {
     id: 'kontrak',
-    title: 'Perdagangan Atas Dasar Balas Jasa atau Kontrak',
-    short: 'Kontrak & Jasa',
-    body: 'Melalui layanan perdagangan berbasis kontrak, kami menjadi mitra pengadaan terpercaya bagi perusahaan yang membutuhkan solusi procurement menyeluruh — dari identifikasi pemasok hingga pengiriman barang sesuai spesifikasi.',
+    title: 'Contract-Based Trading',
+    short: 'Contract Trade',
+    body: 'We provide trading and procurement solutions structured around specific agreements, specifications, and the unique needs of each business partner.',
     image: images.teamCorporate,
   },
   {
     id: 'barang-umum',
-    title: 'Perdagangan Besar Berbagai Macam Barang',
-    short: 'Berbagai Barang',
-    body: 'Dengan izin usaha perdagangan besar, kami juga melayani kebutuhan komoditas umum di luar sektor perikanan, memberikan fleksibilitas bagi mitra usaha yang membutuhkan satu titik kontak untuk berbagai kebutuhan pengadaan.',
+    title: 'General Merchandise',
+    short: 'General Goods',
+    body: 'We extend our trading capabilities to meet general commodity needs beyond the fisheries sector.',
     image: images.generalGoods,
   },
 ];
@@ -49,32 +49,32 @@ export const services: Service[] = [
 export const supplyChain: SupplyChainStep[] = [
   {
     id: 'pengadaan',
-    title: 'Pengadaan',
-    body: 'Sumber langsung dari budidaya, koperasi nelayan, dan pemasok tersertifikasi.',
+    title: 'Procurement',
+    body: 'Connecting market demand with the right product sources and suppliers.',
   },
   {
     id: 'cold-chain',
     title: 'Cold Chain',
-    body: 'Penyimpanan dan armada berpendingin menjaga suhu dari gudang hingga pengiriman.',
+    body: 'Preserving product condition through temperature-controlled storage and transportation tailored to commodity requirements.',
   },
   {
     id: 'inspeksi',
-    title: 'Inspeksi',
-    body: 'Pemeriksaan mutu, kesegaran, dan kelengkapan dokumen pada setiap batch.',
+    title: 'Inspection',
+    body: 'Ensuring product quality is verified and maintained before entering the distribution stage.',
   },
   {
     id: 'distribusi',
-    title: 'Distribusi',
-    body: 'Pengiriman terjadwal ke hotel, restoran, industri, dan mitra dagang.',
+    title: 'Distribution',
+    body: 'Managing product delivery to reach partners in accordance with requirements and agreed terms.',
   },
 ];
 
 export const commodities: Commodity[] = [
-  { id: 'live', title: 'Ikan Hidup', image: images.liveFish },
-  { id: 'frozen', title: 'Seafood Beku', image: images.frozenSeafood },
-  { id: 'fnb', title: 'Bahan F&B', image: images.fnb },
-  { id: 'general', title: 'Barang Umum', image: images.generalGoods },
+  { id: 'live', title: 'Live Fish', image: images.liveFish },
+  { id: 'frozen', title: 'Frozen Seafood', image: images.frozenSeafood },
+  { id: 'fnb', title: 'F&B Supplies', image: images.fnb },
+  { id: 'general', title: 'General Goods', image: images.generalGoods },
 ];
 
 export const qualityAssurance =
-  'Standar mutu kami mencakup penanganan suhu terkontrol, dokumentasi asal barang, dan pemeriksaan visual serta organoleptik sebelum pengiriman. Fasilitas mitra cold storage dan SOP internal memastikan setiap komoditas sampai dalam kondisi yang sesuai spesifikasi pembeli.';
+  'Quality is inseparable from every trading activity at PT Samudra Biru Indonesia. We pay close attention to every stage — procurement, handling, inspection, storage, and distribution — to ensure product condition is maintained to the required standards. In fishery product trading, cold chain systems and temperature-controlled storage facilities are part of our commitment to preserving product freshness and quality throughout the distribution process.';

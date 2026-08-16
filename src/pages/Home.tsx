@@ -48,15 +48,15 @@ export default function Home() {
         <div className="container hero-copy">
           <h1 className="hero-title">{company.tagline}</h1>
           <p className="hero-lead">
-            PT Samudra Biru Indonesia — mitra usaha terpercaya dalam budidaya, perdagangan, dan
-            distribusi komoditas perikanan serta berbagai produk perdagangan.
+            PT Samudra Biru Indonesia is your business partner in the cultivation, trading, and
+            distribution of fishery commodities and a wide range of commercial goods.
           </p>
           <div className="hero-actions">
             <Link to="/about" className="btn btn-gold">
-              Tentang Kami
+              About Us
             </Link>
             <Link to="/services" className="btn btn-outline">
-              Layanan Kami
+              View Services
             </Link>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function Home() {
                 <p key={p.slice(0, 24)}>{p}</p>
               ))}
               <Link to="/about" className="text-link">
-                Pelajari Lebih Lanjut
+                Learn More
               </Link>
             </div>
           </ScrollReveal>
@@ -85,7 +85,7 @@ export default function Home() {
 
       <section className="section section-dark">
         <div className="container">
-          <h2 className="section-title">Bidang Usaha</h2>
+          <h2 className="section-title">Business Areas</h2>
           <ScrollReveal className="fields-grid" stagger>
             {services.map((service, i) => {
               const Icon = fieldIcons[i];
@@ -106,7 +106,7 @@ export default function Home() {
         <div className="container split split-reverse">
           <ScrollReveal>
             <div className="prose">
-              <h2>Komitmen Kualitas</h2>
+              <h2>Quality Commitment</h2>
               <p>{qualityCommitment}</p>
             </div>
           </ScrollReveal>
@@ -120,7 +120,7 @@ export default function Home() {
 
       <section className="section section-dark values-section">
         <div className="container">
-          <h2 className="section-title">Nilai Perusahaan</h2>
+          <h2 className="section-title">Company Values</h2>
           <ul className="value-strip">
             {values.map((value) => {
               const Icon = valueIcons[value.id];
@@ -136,7 +136,7 @@ export default function Home() {
         </div>
       </section>
 
-      <CtaBanner heading="Siap Menjadi Mitra Kami?" />
+      <CtaBanner heading="Ready to Partner with Us?" />
     </>
   );
 }
